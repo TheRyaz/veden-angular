@@ -13,7 +13,7 @@ ENV PATH /node-v7.6.0-linux-x64/bin:$PATH
 RUN npm install -g @angular/cli@1.0.0
 
 VOLUME /app
-
 WORKDIR /app
-
+RUN mkdir /.npm && chown 1000:1000 /.npm
+USER 1000
 CMD ['/bin/bash']
