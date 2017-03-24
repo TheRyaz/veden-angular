@@ -10,7 +10,7 @@ RUN apt-get install -y wget xz-utils && \
 
 ENV PATH /node-v7.6.0-linux-x64/bin:$PATH
 
-RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli@1.0.0
 
 VOLUME /app
 
